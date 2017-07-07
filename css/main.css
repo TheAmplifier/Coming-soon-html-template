@@ -1,0 +1,47 @@
+
+/**** default styles ****/
+body { 
+	margin: 0;
+	height: 100vh;
+	background-image: url('../images/background-image.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: left;
+	font: 20px Helvetica, sans-serif;
+	color: #FFF;
+}
+
+
+/**** alignment styles ****/
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/**** styles for main content ****/
+main {
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+main h1 { 
+	color: #004f6e;
+	font-size: 30px; 
+	margin-bottom: 50px;
+}
+main a { 
+	color: #006189;
+	text-decoration: none;
+}
+main a:hover {
+	color: #555555;
+	text-decoration: none;
+}
+main p { 
+	line-height: 1.7em;
+	margin: 0 0 15px 0;
+}
