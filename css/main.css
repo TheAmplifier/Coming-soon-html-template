@@ -1,17 +1,25 @@
 
+/**** fonts ****/
+ @import url('https://fonts.googleapis.com/css?family=Eczar|Open+Sans');
+
 /**** default styles ****/
 body { 
 	margin: 0;
 	height: 100vh;
-	background-image: url('../images/background-image.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: #02AAB0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	text-align: left;
-	font: 20px Helvetica, sans-serif;
+	font: 18px 'Open Sans', sans-serif;
+	font-weight: 100;
 	color: #FFF;
 }
 
+h1, 
+h2 {
+  font-family: 'Eczar', serif;
+}
 
 /**** alignment styles ****/
 .vertical-align {
@@ -23,25 +31,46 @@ body {
 
 /**** styles for main content ****/
 main {
+	text-align: center;
 	box-sizing: border-box;
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-main h1 { 
-	color: #004f6e;
-	font-size: 30px; 
-	margin-bottom: 50px;
+main div.top {
+
 }
-main a { 
-	color: #006189;
+main div.bottom {
+	margin-top: 100px;
+}
+main div.bottom footer {
+	font-size: 14px;
+}
+main div.bottom span a {
+	color: #FFFFFF;
 	text-decoration: none;
 }
-main a:hover {
+main div.bottom span a:hover {
+	border-bottom: 1px solid #FFFFFF;
+	padding-bottom: 1px;
+}
+
+main div.top h1 { 
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+	font-size: 40px; 
+	margin-bottom: 50px;
+}
+main div.top a { 
 	color: #555555;
 	text-decoration: none;
 }
-main p { 
+main div.top a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+main div.top p { 
 	line-height: 1.7em;
 	margin: 0 0 15px 0;
 }
