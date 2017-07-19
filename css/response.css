@@ -1,0 +1,25 @@
+/* Small devices */
+@media (min-width: 576px) { 
+}
+
+/* Medium devices */
+@media (min-width: 768px) { 
+
+	main {
+		width: 700px;
+	}
+
+	.centered {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) { 
+}
